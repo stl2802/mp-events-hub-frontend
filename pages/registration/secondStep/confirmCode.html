@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Подтверждение регистрации</title>
+</head>
+<body>
+    <h1>Подтверждение регистрации</h1>
+
+    <p id="infoText">
+        Введите код подтверждения, который был отправлен на вашу почту.
+    </p>
+
+    <form id="confirmForm" method="post" novalidate>
+        <label for="confirm-code">Код подтверждения</label>
+        <input
+            id="confirm-code"
+            name="confirm_code"
+            type="text"
+            required
+        >
+        <button type="submit" id="confirmSubmitBtn">Подтвердить</button>
+    </form>
+
+    <script src="./confirmCode.js"></script>
+</body>
+</html>
